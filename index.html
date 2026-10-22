@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holocron Reviews - Perú Wars Reseñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header>
+        <div class="navbar">
+            <div class="logo-container">
+                <!-- Logotipo Original Optimizado: PERÚ WARS RESEÑAS -->
+                <svg class="sw-logo" viewBox="0 0 1000 450" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .sw-text {
+                                font-family: 'Francois One', 'Arial Black', sans-serif;
+                                font-weight: 900;
+                                fill: #FFE81F;
+                                text-anchor: middle;
+                                letter-spacing: -2px;
+                            }
+                        </style>
+                    </defs>
+                    <!-- Línea superior: PERÚ -->
+                    <text x="500" y="190" class="sw-text" font-size="210" transform="scale(1, 0.85) translate(0, 30)">PERÚ</text>
+                    <!-- Línea inferior: WARS -->
+                    <text x="500" y="380" class="sw-text" font-size="210" transform="scale(1, 0.85) translate(0, 65)">WARS</text>
+                    <!-- Subtítulo integrado: RESEÑAS -->
+                    <text x="500" y="440" font-family="'Roboto', sans-serif" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="12px" font-size="32">RESEÑAS</text>
+                </svg>
+            </div>
+            <nav>
+                <a href="#" class="nav-link active" data-target="starwars">Star Wars</a>
+                <a href="#" class="nav-link" data-target="indiana">Indiana Jones</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1 id="hero-title">RESEÑAS GALÁCTICAS</h1>
+            <p id="hero-subtitle">Tu destino definitivo para la crítica de Star Wars, series, spin-offs y las aventuras de Indy.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        
+        <!-- STAR WARS CONTENT -->
+        <section id="starwars-section" class="content-section active-section">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="original">Trilogía Original</button>
+                <button class="filter-btn" data-filter="prequel">Precuelas</button>
+                <button class="filter-btn" data-filter="spin-off">Spin-Offs & Series</button>
+            </div>
+
+            <div class="grid" id="sw-grid"></div>
+        </section>
+
+        <!-- INDIANA JONES CONTENT -->
+        <section id="indiana-section" class="content-section">
+            <div class="grid" id="indy-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Perú Wars Reseñas. Creado por un Desarrollador Web Senior. Que la Fuerza te acompañe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
